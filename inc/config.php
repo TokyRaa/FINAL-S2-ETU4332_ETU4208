@@ -2,9 +2,9 @@
 session_start();
 
 $host    = 'localhost';
-$db      = 'finals2';
-$user    = 'root';    // à adapter
-$pass    = '';        // à adapter
+$db      = 'db_s2_ETU004332';
+$user    = 'ETU004332';    // à adapter
+$pass    = 'fc0afSUc';        // à adapter
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
