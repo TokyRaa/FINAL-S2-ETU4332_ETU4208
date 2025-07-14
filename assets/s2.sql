@@ -57,63 +57,56 @@ INSERT INTO images_objet (id_objet, nom_image) VALUES
 
 
 INSERT INTO objet (nom_objet, id_categorie, id_membre) VALUES
--- Membres 1 (Alice)
 ('Trousse de maquillage', 1, 1),
 ('Palette de fards à paupières', 1, 1),
 ('Miroir de poche', 1, 1),
 ('Pince à épiler', 1, 1),
-('Lampe de poche',        2, 1),
-('Perceuse sans fil',     2, 1),
+('Lampe de poche', 2, 1),
+('Perceuse sans fil', 2, 1),
 ('Tournevis multi-embouts',2, 1),
-('Clé à molette',         3, 1),
-('Crics hydraulique',      3, 1),
-('Robot de cuisine',      4, 1),
-
--- Membres 2 (Bob)
-('Vernis à ongles',       1, 2),
-('Sèche-cheveux',         1, 2),
-('Fer à lisser',          1, 2),
-('Niveau à bulle',        2, 2),
-('Scie sauteuse',         2, 2),
-('Tournevis électrique',  2, 2),
-('Clé dynamométrique',    3, 2),
-('Compresseur d’air',     3, 2),
-('Mixeur plongeant',      4, 2),
-('Balance de cuisine',    4, 2),
-
-Membres 3 (Chloé)
-('Crayon à sourcils',     1, 3),
-('Fond de teint',         1, 3),
-('Brosse à cheveux',      1, 3),
-('Marteau',               2, 3),
-('Pistolet à colle',      2, 3),
-('Cutter',                2, 3),
-('Clé anglaise',          3, 3),
-('Pompe à vélo',          3, 3),
-('Grille-pain',           4, 3),
-('Cocotte-minute',        4, 3),
--- Membres 4 (David)
-('Rouge à lèvres',        1, 4),
-('Crème hydratante',      1, 4),
-('Lisseur de cheveux',    1, 4),
+('Clé à molette', 3, 1),
+('Crics hydraulique',3, 1),
+('Robot de cuisine', 4, 1),
+('Vernis à ongles',1, 2),
+('Sèche-cheveux', 1, 2),
+('Fer à lisser', 1, 2),
+('Niveau à bulle',2, 2),
+('Scie sauteuse', 2, 2),
+('Tournevis électrique',2, 2),
+('Clé dynamométrique',3, 2),
+('Compresseur d’air', 3, 2),
+('Mixeur plongeant', 4, 2),
+('Balance de cuisine',4, 2),
+('Crayon à sourcils',1, 3),
+('Fond de teint', 1, 3),
+('Brosse à cheveux', 1, 3),
+('Marteau', 2, 3),
+('Pistolet à colle', 2, 3),
+('Cutter', 2, 3),
+('Clé anglaise', 3, 3),
+('Pompe à vélo', 3, 3),
+('Grille-pain', 4, 3),
+('Cocotte-minute',4, 3),
+('Rouge à lèvres', 1, 4),
+('Crème hydratante', 1, 4),
+('Lisseur de cheveux', 1, 4),
 ('Perceuse à percussion', 2, 4),
-('Pince à sertir',        2, 4),
-('Clé à pipe',            3, 4),
-('Pneu de secours',       3, 4),
-('Friteuse sans huile',   4, 4),
-('Robot pâtissier',       4, 4)
-('Casserole inox',        4, 4)
-;
+('Pince à sertir', 2, 4),
+('Clé à pipe', 3, 4),
+('Pneu de secours', 3, 4),
+('Friteuse sans huile', 4, 4),
+('Robot pâtissier', 4, 4),
+('Casserole inox', 4, 4);
 
 INSERT INTO emprunt (id_objet, id_membre, date_emprunt, date_retour) VALUES
-( 3,  2, '2025-06-10', '2025-06-15'),  -- Miroir de poche emprunté par Bob
-( 5,  1, '2025-07-01', NULL),          -- Lampe de poche empruntée par Alice (en cours)
-(11,  4, '2025-05-20', '2025-05-25'),  -- Vernis à ongles par David
-(18,  3, '2025-04-15', '2025-04-20'),  -- Clé dynamométrique par Chloé
-(23,  1, '2025-06-30', NULL),          -- Crayon à sourcils par Alice (en cours)
-(29,  2, '2025-07-05', '2025-07-08'),  -- Grille-pain par Bob
-(33,  3, '2025-06-01', '2025-06-03'),  -- Clé anglaise par Chloé
-(37,  4, '2025-06-25', NULL),          -- Clé plate par David (en cours)
-(40,  2, '2025-05-10', '2025-05-12'),  -- Casserole inox par Bob
-(14,  3, '2025-07-10', NULL)           -- Sèche-cheveux par Chloé (en cours)
+( 3,  2, '2025-06-10', '2025-06-15'),  
+( 5,  1, '2025-07-01', NULL),         
+(11,  4, '2025-05-20', '2025-05-25'), 
+(18,  3, '2025-04-15', '2025-04-20'),  
+(23,  1, '2025-06-30', NULL),          
+(29,  2, '2025-07-05', '2025-07-08'), 
+(33,  3, '2025-06-01', '2025-06-03'),  
+(37,  4, '2025-06-25', NULL),          
+(40,  2, '2025-05-10', '2025-05-12'),  
+(14,  3, '2025-07-10', NULL)           
 ;
